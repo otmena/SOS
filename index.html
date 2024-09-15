@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SOS</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./media.css">
+	</head>
+	<body>
+		<section class="main">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="./img/logo.png" alt="logo" class="logo" />
+					</div>
+					<div class="header__nav">
+						<ul class="header__menu">
+							<li class="header__menu-item list__reset"><a href="#" data-section="one" class="header__link font-menu">MAIN</a></li>
+							<li class="header__menu-item list__reset"><a href="#" data-section="two" class="header__link font-menu">ABOUT</a></li>
+							<li class="header__menu-item list__reset"><a href="#" data-section="three" class="header__link font-menu">GAME FEATURES</a></li>
+							<li class="header__menu-item list__reset"><a href="#" data-section="four" class="header__link font-menu">SYSTEM REQUIREMENTS</a></li>
+							<li class="header__menu-item list__reset"><a href="#" data-section="five" class="header__link font-menu">QUOTES</a></li>
+						</ul>
+					</div>
+					<div class="header__actions">
+						<div class="dropdown">
+							<button class="dropdown__button">
+								Lng <span><img src="./img/ArrowDownIcon.svg" alt="" /></span>
+							</button>
+							<div class="dropdown__content">
+								<a href="#">En</a>
+								<a href="#">Ru</a>
+								<a href="#">De</a>
+							</div>
+						</div>
+						<hr />
+						<div class="logos">
+							<a href="#">
+								<img src="./img/steam icon.svg" alt="steam" />
+							</a>
+							<a href="#">
+								<img src="./img/xbox icon.svg" alt="xbox" />
+							</a>
+						</div>
+						<button class="menu-toggle">☰</button>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<div class="main__info">
+					<p class="font-title">SURVIVE AT ALL COSTS</p>
+					<p class="font-subtitle">Experience new social battle royale game</p>
+					<button class="button-1 main__button">
+						<p>Buy Now on Steam</p>
+						<img src="./img/line.png" alt="line" />
+						<p>$14.99</p>
+					</button>
+					<div class="main__bottom-action">
+						<p class="font-action">THE STORY</p>
+						<img src="./img/scroll down.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about section" id="one">
+			<div class="container">
+				<div class="about__container">
+					<div class="about__column">
+						<div class="about__title">
+							<p class="font-subtitle">What is SOS?</p>
+							<p class="font-title">social battle royale game</p>
+						</div>
+						<div class="line"></div>
+						<div class="about__text font-text">
+							Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape? Making the right decisions could be the difference between life and death.
+						</div>
+					</div>
+					<div class="about__column">
+						<div class="slider">
+							<div class="slides">
+								<div class="slide"><img src="./img/screenshot 1.jpg" alt="Image 1" /></div>
+								<div class="slide"><img src="./img/carouselbg2.jpg" alt="Image 2" /></div>
+								<div class="slide"><img src="./img/carouselbg3.jpg" alt="Image 3" /></div>
+							</div>
+							<button class="prev" onclick="prevSlide()">&#10094;</button>
+							<button class="next" onclick="nextSlide()">&#10095;</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features section" id="two">
+			<div class="container">
+				<div class="features__column">
+					<div class="features__title">
+						<p class="font-subtitle">What's so special?</p>
+						<p class="font-title">features</p>
+					</div>
+					<div class="features__menu">
+						<div class="dropdownn">
+							<li class="dropdownn_title font-subtitle-1" id="dropdownButton1">SURVIVE AT ALL COSTS</li>
+							<div id="dropdownMenu1" class="dropdownn-content">
+								<p class="dropdownn__text font-text">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+							</div>
+						</div>
+						<div class="dropdownn">
+							<li class="dropdownn_title font-subtitle-1" id="dropdownButton2">CREATE ALLIES AND ENEMIES</li>
+							<div id="dropdownMenu2" class="dropdownn-content">
+								<p class="dropdownn__text font-text">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus inventore, quo itaque qui, magnam est doloribus obcaecati neque architecto tempora ea atque exercitationem ex doloremque quam? Nobis iure adipisci distinctio aut labore nemo molestiae quo minima ab fugit. Architecto fugit
+									eius sapiente ab officiis molestias repudiandae suscipit quae aperiam tempora.
+								</p>
+							</div>
+						</div>
+						<div class="dropdownn">
+							<li class="dropdownn_title font-subtitle-1" id="dropdownButton3">IMPRESS THE AUDIENCE</li>
+							<div id="dropdownMenu3" class="dropdownn-content">
+								<p class="dropdownn__text font-text">Saepe soluta fugit, qui ullam totam adipisci nisi in veniam mollitia, dolorum quaerat impedit recusandae quod dignissimos debitis vel, expedita magnam rerum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="system section" id="three">
+			<div class="container">
+				<div class="system__title">
+					<p class="font-subtitle">Can My Computer Run this game?</p>
+					<p class="font-title">system requirements</p>
+				</div>
+				<dl class="system__table">
+					<div class="system__table-item">
+						<dt class="table__title">os:</dt>
+						<dd class="table__info">Windows 7 64-bit only No OSX support at this time</dd>
+					</div>
+					<div class="system__table-item">
+						<dt class="table__title">processor:</dt>
+						<dd class="table__info">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</dd>
+					</div>
+					<div class="system__table-item">
+						<dt class="table__title">memory:</dt>
+						<dd class="table__info">8 GB RAM</dd>
+					</div>
+					<div class="system__table-item">
+						<dt class="table__title">storage:</dt>
+						<dd class="table__info">8 GB available space</dd>
+					</div>
+					<div class="system__table-item">
+						<dt class="table__title">GRAPHICS:</dt>
+						<dd class="table__info">NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 Shader Model 5</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
+		<section class="quotes section" id="four">
+			<div class="container">
+				<div class="quotes__container">
+					<div class="quotes__column">
+						<div class="quotes__title">
+							<p class="font-subtitle">WHAT PEOPLE THINK?</p>
+							<p class="font-title">PRESS QUOTES</p>
+						</div>
+						<div class="quotes__info">
+							<p class="font-text">Our goal is to create a product and service that you're satisfied with and use it every day. This is why we're constantly working on our services to make it better every day and really listen to what our users has to say.</p>
+						</div>
+						<div class="quotes__button">
+							<button class="button-1">Read more testimonials</button>
+						</div>
+					</div>
+					<div class="quotes__column">
+						<div class="quote__item">
+							<div class="quote__item-box">
+								<img src="./img/photo.png" alt="selfie" class="quote__img" />
+								<cite class="quote__name">EVAN LAHTI</cite>
+								<span class="quote__job">PC Gamer</span>
+								<a href="#" class="quote__icon"><img src="./img/twitter.svg" alt="twitter" /></a>
+							</div>
+							<q class="quote__item-text font-text">One of my gaming highlights of the year.</q>
+							<time datetime="2018-10-18 13:00">September 12, 2024</time>
+						</div>
+						<div class="quote__item">
+							<div class="quote__item-box">
+								<img src="./img/photo2.png" alt="selfie" class="quote__img" />
+								<cite class="quote__name">JADA GRIFFIN</cite>
+								<span class="quote__job">Nerdreactor</span>
+								<a href="#" class="quote__icon"><img src="./img/twitter.svg" alt="twitter" /></a>
+							</div>
+							<q class="quote__item-text font-text">The next big thing in the world of streaming and survival games.</q>
+							<time datetime="2018-10-18 13:00">September 12, 2024</time>
+						</div>
+						<div class="quote__item">
+							<div class="quote__item-box">
+								<img src="./img/photo3.png" alt="selfie" class="quote__img" />
+								<cite class="quote__name">AARON WILLIAMS</cite>
+								<span class="quote__job">Uproxx</span>
+								<a href="#" class="quote__icon"><img src="./img/twitter.svg" alt="twitter" /></a>
+							</div>
+							<q class="quote__item-text font-text font-text">Snoop Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous.</q>
+							<time datetime="2018-10-18 13:00">September 12, 2024</time>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe section" id="five">
+			<div class="container">
+				<div class="subscribe__container">
+					<div class="subscribe__column"><img class="subscribe__img" src="./img/subscribeimg.png" alt="img" /></div>
+					<div class="subscribe__column">
+						<div class="subscribe__title">
+							<p class="font-subtitle">Want to stay in touch?</p>
+							<p class="font-title">newsletter SUBSCRIBE</p>
+						</div>
+						<div class="subscribe__info">
+							<p class="font-text">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.</p>
+						</div>
+						<form action="#">
+							<label class="subscribe__form">
+								<span class="form__input-text">Your email address</span>
+								<input type="email" name="email" placeholder="example@gmail.com" class="input" required />
+							</label>
+							<button class="button-1">Subscribe now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer__container">
+				<div class="header__logo">
+					<img src="./img/logo.png" alt="logo" class="logo" />
+				</div>
+				<div class="header__nav">
+					<ul class="header__menu footer__menu">
+						<li class="header__menu-item list__reset footer__menu-item"><a href="#" class="header__link font-menu">MAIN</a></li>
+						<li class="header__menu-item list__reset footer__menu-item"><a href="#" class="header__link font-menu">ABOUT</a></li>
+						<li class="header__menu-item list__reset footer__menu-item"><a href="#" class="header__link font-menu">GAME FEATURES</a></li>
+						<li class="header__menu-item list__reset footer__menu-item"><a href="#" class="header__link font-menu">SYSTEM REQUIREMENTS</a></li>
+						<li class="header__menu-item list__reset footer__menu-item"><a href="#" class="header__link font-menu">QUOTES</a></li>
+					</ul>
+				</div>
+				<div class="footer__actions">
+					<div class="footer__logos">
+						<a href="#"><img src="./img/twitch.svg" alt="twitch" /></a>
+						<a href="#"><img src="./img/twitter_white.svg" alt="twitter" /></a>
+						<a href="#"><img src="./img/youtube.svg" alt="youtube" /></a>
+						<a href="#"><img src="./img/facebook.svg" alt="facebook" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__line"></div>
+			<div class="footer__bottom">
+				<div class="footer__column">
+					<p class="footer__copyright">© 2018 Outpost Games, Inc. All Rights Reserved</p>
+				</div>
+				<div class="footer__column">
+					<a href="#"><p class="footer__links">Privacy Policy</p></a>
+					<hr class="footer__line" />
+					<a href="#"><p class="footer__links">Terms of services</p></a>
+					<hr class="footer__line" />
+					<a href="#"><p class="footer__links">code of conduct</p></a>
+				</div>
+			</div>
+		</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
